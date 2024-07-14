@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h3{
+    margin-left: 3rem;
+}
+.flex{
+    display: flex;
+}
+
+header{
+    padding: 1.1rem;
+    justify-content: space-between;
+    background-color:#7DC95E;
+    align-items: center;
+
+}
+
+#title a{
+    color: #4a634c;
+   
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.sub-title{
+    color: white;
+}
+.nav a{
+color:#4a634c;
+margin: 0 1rem;
+}
+
+.nav a:hover{
+    transition: 0.5s all;
+    color:#CEE7E6;
+    text-decoration: underline;
+}
+h1,.post-title{
+    margin: 1rem 0;
+    text-align: center;
+    color: #66B752;
+}
+label{
+    font-size: 1.4rem;
+    margin: 0.6rem 0;
+}
+#name,#content{
+    outline: none;
+    padding: 0.6rem;
+    border: 0.5px ridge gray;
+    border-radius: 5px;
+
+}
+#submit{
+    background-color: #38b000;
+    padding: 0.5rem;
+    border: none;
+    border-radius:4px;
+    margin-top: 1rem;
+}
+button{
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 0.5px solid #38b000;
+    border-radius:4px;
+    margin-top: 1rem;
+}
+button:hover{
+    background-color: #7DC95E;
+    cursor: pointer;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #7DC95E;
+}
+
+.form-container{
+    padding: 1.5rem;
+    width: 80%;
+    margin: auto;
+    background-color: #ECF8F8;
+    flex-direction: column;
+}
+
+.form-container div{
+    flex-direction: column;
+}
+footer{
+   
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #7DC95E;
+    border:1px solid white
+}
+
+.blog-container{
+    
+    gap: 1.2rem;
+    min-height: 67vh;
+    margin: 0 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.blog-card{
+    
+    background-color: #7dc95e;
+   display: flex;
+   gap: 1rem;
+   flex-direction: column;
+
+   padding: 1rem;
+  width: 80%;
+height: 18rem;
+    border-radius: 5%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 4px 4px 8px #808080;
+
+}
+.blog-card:hover{
+   transform: scale(1.1);
+    background-color: #437c2c;
+
+}
+
+.blog-card a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+p{
+    padding: 3.5rem;
+    line-height:1.5rem;
+}
+ main.container{
+    min-height: 77vh;
+} 
+.delete {
+    margin-left: 14rem;
+    margin-top: -2rem;
+    background-color: #808080;
+    border-radius: 1.2rem;
+    width: 14%;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+    cursor: pointer;
+}
+footer p{
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0;
+}
+.blog-text{
+    padding: 0;
+    color: #124220;
+}
+
+
+/*
+Media queries
+*/
+
+@media (max-width : 1400px) {
+    .delete{
+        margin-left: 13rem;
+    }
+}
+
+@media (max-width : 1320px) {
+    .delete{
+        margin-left: 12.5rem;
+    }
+}
+
+@media (max-width : 1272px) {
+    .delete{
+        margin-left: 11.5rem;
+    }
+}
+@media (max-width : 1200px) {
+    .blog-card{
+        width: 95%;
+    }
+    .delete{
+        margin-left: 15rem;
+    }
+    .blog-container{
+        gap: 5.2rem;
+        grid-template-columns: repeat(3,1fr);
+        padding-right: 3.5rem;
+    }
+}
+
+
+
+@media (max-width : 1172px) {
+    .blog-container{
+        gap: 4rem;
+        
+    }
+}
+@media (max-width : 1088px) {
+    .blog-container{
+        gap: 3rem;
+       
+        
+    }
+}
+@media (max-width : 1042px) {
+    .blog-container{
+        gap: 2rem;
+        
+    }
+}
+
+@media (max-width : 1010px) {
+    .blog-container{
+        gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .delete{
+        margin-left: 21rem;
+        border-radius: 50%;
+        width: 10%;
+    }
+}
+
+
+@media (max-width : 992px) {
+    .delete {
+        margin-left: 13rem;
+    }
+    .blog-card{
+        width: 75%;
+    }
+}
+
+@media (max-width : 768px) {
+    .delete {
+        margin-left: 13rem;
+    }
+    .blog-card{
+        width: 90%;
+    }
+}
+
+@media (max-width:625px) {
+    .blog-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog-card{
+        width: 75%;
+        margin: auto;
+    }
+    .delete{
+        margin-left: 19rem;
+    }
+}
+
+@media (max-width:576px) {
+    .blog-card{
+        width: 80%;
+      
+    }
+    .delete{
+        margin-left: 18rem;
+    }
+}
+
+@media (max-width:541px) {
+    
+    .delete{
+        margin-left: 16rem;
+       
+    }
+}

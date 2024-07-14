@@ -293,3 +293,52 @@ Media queries
        
     }
 }
+
+@media (max-width:500px) {
+    
+    .delete{
+        margin-left: 14.5rem;
+       
+    }
+}
+@media (max-width:468px) {
+    
+    .delete{
+        margin-left: 14rem;
+       
+    }
+}
+@media (max-width:453px) {
+    
+    .delete{
+        margin-left: 13.5rem;
+       
+    }
+}
+@media (max-width:434px) {
+    
+    .delete{
+        margin-left: 12.5rem;
+       
+    }
+}
+@media (max-width:410px) {
+    .blog-card{
+        width: 94%;
+    }
+    .delete{
+        margin-left: 13.5rem;
+       
+    }
+    
+    
+}
+
+@media (max-width:395px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}

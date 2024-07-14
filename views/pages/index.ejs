@@ -10,7 +10,17 @@
             <a  href="./pages/<%= post.id %>"><%= post.title %></a>
            
             <p class="blog-text">
-                <%= post.cont %>
+                
+                    <% 
+                      let text =  post.cont  ;
+                      let result = text.substr(0, 95) + "..........."; // Extracts the first 5 characters
+                      
+                    %>
+
+                    <%= result %>
+                  
+                  
+                
             </p>
             
 

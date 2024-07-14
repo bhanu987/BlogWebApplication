@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    <h1 ><%=post.title %></h1>
+    <h3></h3>
+    <p class="blog-content">
+    
+        India is a land of diverse landscapes, from majestic mountains to serene beaches, lush forests, and sprawling deserts. Exploring these scenic routes by road can be an adventure of a lifetime. Here are our top 10 scenic routes in India that promise breathtaking views and unforgettable experiences.
+        
+        1.Manali to Leh Highway
+        The Manali-Leh Highway is one of the most iconic road trips in India. This 479 km stretch offers stunning views of the Himalayas, picturesque valleys, and high-altitude passes like Rohtang Pass and Tanglang La. The journey is filled with adventure and challenges, making it a favorite among bikers and road trip enthusiasts.
+        
+         2. Mumbai to Goa
+        The Mumbai to Goa route, via NH 66, is a perfect blend of coastal beauty and cultural richness. This 600 km drive takes you through lush green landscapes, picturesque villages, and beautiful beaches. The road is dotted with quaint eateries and offers plenty of opportunities to explore the local culture and cuisine.
+        
+         3.Shimla to Spiti Valley
+        The route from Shimla to Spiti Valley is a mesmerizing journey through the heart of the Himalayas. This 450 km drive takes you through scenic landscapes, ancient monasteries, and high-altitude deserts. The journey offers stunning views of snow-capped peaks, deep gorges, and pristine rivers.
+        
+        4. Chennai to Pondicherry
+        The East Coast Road (ECR) from Chennai to Pondicherry is a picturesque coastal drive offering beautiful views of the Bay of Bengal. This 160 km route is known for its smooth roads, scenic beaches, and charming towns. Don’t miss the French architecture and vibrant culture of Pondicherry at the end of your journey.
+        
+         5. Guwahati to Tawang
+        The route from Guwahati to Tawang in Arunachal Pradesh is an adventurous drive through the eastern Himalayas. This 520 km journey offers breathtaking views of mountains, lush forests, and pristine rivers. The Sela Pass, with its stunning lake and snow-covered landscapes, is a highlight of this route.
+        
+         6. Bangalore to Ooty
+        The drive from Bangalore to Ooty via the Mysore-Ooty Road is a delightful journey through the Nilgiri Hills. This 270 km route takes you through lush tea gardens, dense forests, and picturesque hill stations. The hairpin bends and scenic viewpoints make this drive an exhilarating experience.
+        
+        7.Jaipur to Jaisalmer
+        The road trip from Jaipur to Jaisalmer takes you through the heart of Rajasthan’s desert landscapes. This 560 km route offers views of sand dunes, historic forts, and vibrant villages. The Golden City of Jaisalmer, with its magnificent fort and desert safaris, is a perfect culmination of this journey.
+        
+        8. Shillong to Cherrapunji
+        The drive from Shillong to Cherrapunji in Meghalaya is a short but scenic route through lush green hills and misty landscapes. This 54 km drive offers stunning views of waterfalls, living root bridges, and the unique Khasi culture. Cherrapunji, known for its heavy rainfall, offers a refreshing escape into nature.
+        
+         9. Ahmedabad to Kutch
+        The road trip from Ahmedabad to the Rann of Kutch is a unique journey through Gujarat’s diverse landscapes. This 400 km route takes you through salt flats, arid deserts, and vibrant villages. The white desert of Kutch, especially during the Rann Utsav, is a surreal experience.
+        
+         10. Kolkata to Darjeeling
+        The drive from Kolkata to Darjeeling is a journey from the plains to the hills. This 630 km route takes you through scenic landscapes, tea gardens, and charming hill stations. The toy train ride from New Jalpaiguri to Darjeeling is a delightful addition to this journey, offering stunning views of the Himalayas.
+        
+        
+        
+        These scenic routes in India promise a mix of adventure, natural beauty, and cultural experiences. Pack your bags, hit the road, and let the journey be your destination!</p>
+    </main>
+<%- include("../partials/footer.ejs") %>
+
+    
+
+
+    
+
+
+<script>const date = Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+console.log(date)
+
+document.querySelector('h3').innerHTML = date
+
+</script>
+</body>
+</html>
+  

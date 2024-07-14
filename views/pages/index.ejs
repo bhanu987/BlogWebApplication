@@ -1,0 +1,50 @@
+
+    <%- include("../partials/header.ejs") %>
+<h1>Blogs</h1>
+<ul class=" blog-container">
+    <!-- list of  blog post here-->
+     <% blogpost.forEach(post => { %>
+        <li  class="blog-card">
+
+            <span class="delete" data-id="<%= post.id %>">X </span>
+            <a  href="./pages/<%= post.id %>"><%= post.title %></a>
+           
+            <p class="blog-text">
+                <%= post.cont %>
+            </p>
+            
+
+        </li>
+     <% }); %>
+    
+</ul>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const deleteButtons = document.querySelectorAll('.delete');
+
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', async (event) => {
+            const postId = event.target.getAttribute('data-id');
+            const response = await fetch(`/delete/${postId}`, { method: 'DELETE' });
+
+            if (response.ok) {
+                // Remove the blog card from the DOM
+                event.target.parentElement.remove();
+            } else {
+                console.error('Failed to delete the post');
+            }
+        });
+    });
+});
+
+</script>
+</main>
+
+
+    
+
+
+<%- include("../partials/footer.ejs") %>
+
+
+

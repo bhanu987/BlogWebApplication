@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    <h1 ><%=post.title %></h1>
+    <h3></h3>
+    <p class="blog-content">
+    
+      Planning a road trip can be an exciting yet daunting task. A well-planned road trip ensures a smooth, enjoyable, and memorable journey. Here’s a comprehensive guide to help you plan the perfect road trip.
+
+      1. Choose Your Destination
+      Decide on the primary destination or region you want to explore. Consider the interests of all travelers, the distance you’re willing to drive, and the time you have available. Whether it’s a scenic mountain drive, a coastal route, or a cultural exploration, selecting a destination is the first step.
+      
+      2. Plan Your Route
+      Once you have your destination in mind, map out your route. Use navigation apps like Google Maps to get an overview of the main roads and alternate routes. Plan for scenic byways and attractions along the way. Ensure you account for driving time, rest breaks, and overnight stops.
+      
+      3. Set a Budget
+      Determine a budget for your road trip, including fuel, accommodation, food, activities, and emergencies. Having a budget helps in making informed decisions and avoids overspending. Consider using apps that track expenses to stay within your budget.
+      
+      4. Check Your Vehicle
+      Ensure your vehicle is in good condition before hitting the road. Check the oil, tire pressure, brakes, and fluid levels. Pack a spare tire, jack, and jumper cables. Having a well-maintained vehicle reduces the risk of breakdowns and ensures a safe trip.
+      
+      5. Pack Smart
+      Pack according to the climate and activities you plan to engage in. Essentials include:
+      
+      Clothes suitable for various weather conditions
+      Personal hygiene items
+      Medications and a first-aid kit
+      Snacks and drinks
+      Maps, guidebooks, and an itinerary
+      Entertainment options like books, music, or games
+      Chargers for electronic devices
+      Emergency supplies like a flashlight, blanket, and multi-tool
+      6. Book Accommodation in Advance
+      If you’re planning to stay overnight, book your accommodations in advance. Research hotels, motels, or campgrounds along your route. Booking ahead ensures you have a place to stay and can often save money with early bird discounts.
+      
+      7. Plan Activities and Attractions
+      Research and list down the attractions, activities, and points of interest along your route and at your destination. This can include national parks, museums, hiking trails, historic sites, and local eateries. Having a list of things to do helps in making the most of your trip.
+      
+      8. Stay Connected and Safe
+      Share your itinerary with a friend or family member. Carry a fully charged phone and a car charger. Consider having a roadside assistance plan for emergencies. Familiarize yourself with basic car maintenance and emergency procedures.
+      
+      9. Stay Flexible
+      While planning is crucial, flexibility is equally important. Road trips are about exploration and adventure. Be open to unplanned stops, scenic detours, and spontaneous activities. Sometimes, the best experiences come from the unexpected.
+      
+      10. Enjoy the Journey
+      Remember, a road trip is as much about the journey as the destination. Take time to enjoy the scenery, explore local culture, and create memories with your travel companions. Capture moments with photos, keep a travel journal, and most importantly, have fun!
+    </main>
+<%- include("../partials/footer.ejs") %>
+
+    
+
+
+    
+
+
+<script>const date = Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+console.log(date)
+
+document.querySelector('h3').innerHTML = date
+
+</script>
+</body>
+</html>
+  
